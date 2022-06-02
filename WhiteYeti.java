@@ -1,46 +1,47 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class PinkYeti here.
+ * Write a description of class WhiteYeti here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class PinkYeti extends Actor
+public class WhiteYeti extends Actor
 {
+    GreenfootImage[] move = new GreenfootImage[4];
     /**
-     * Act - do whatever the PinkYeti wants to do. This method is called whenever
+     * Act - do whatever the WhiteYeti wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    GreenfootImage[] move = new GreenfootImage[4];
-    
-    public PinkYeti()
+    public WhiteYeti()
     {
+        
         for(int i = 0; i < 4; i++)
         {
-            move[i] = new GreenfootImage("images/pinkyetis/p.move" + i + ".png");
+            move[i] = new GreenfootImage("images/whiteyetis/w.move" + i + ".png");
         }
-        setImage(move[0]);
+        setImage(move[0]);     
+        
     }
-    
     public void act()
     {
         // Add your action code here.
-        if(Greenfoot.isKeyDown("w"))
+        if(Greenfoot.isKeyDown("up"))
         {
             setLocation(getX(), getY()-5);
         }
-        if(Greenfoot.isKeyDown("s"))
+        if(Greenfoot.isKeyDown("down"))
         {
             setLocation(getX(), getY()+5);
         }
-        if(Greenfoot.isKeyDown("a"))
+        if(Greenfoot.isKeyDown("left"))
         {
             setLocation(getX()-5, getY());
         }
-        if(Greenfoot.isKeyDown("d"))
+        if(Greenfoot.isKeyDown("right"))
         {
             setLocation(getX()+5, getY());
         }
+        
     }
 }
