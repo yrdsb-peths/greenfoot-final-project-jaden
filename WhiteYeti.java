@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class WhiteYeti extends Actor
 {
     GreenfootImage[] move = new GreenfootImage[4];
+    SimpleTimer animation = new SimpleTimer();
     /**
      * Act - do whatever the WhiteYeti wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -21,7 +22,18 @@ public class WhiteYeti extends Actor
             move[i] = new GreenfootImage("images/whiteyetis/w.move" + i + ".png");
         }
         setImage(move[0]);     
-        
+        animation.mark();
+    }
+    int imageIndex = 0;
+    public void animate()
+    {
+        if(animation.millisElapsed() < 500)
+        {
+            return;
+        }
+        animation.mark();
+        setImage(move[imageIndex]);
+        imageIndex = (imageIndex + 1) % move.length;
     }
     public void act()
     {
@@ -42,6 +54,6 @@ public class WhiteYeti extends Actor
         {
             setLocation(getX()+5, getY());
         }
-        
+        animate();
     }
 }
