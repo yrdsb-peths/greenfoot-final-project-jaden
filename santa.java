@@ -17,6 +17,9 @@ public class santa extends Actor
             santaDie[i] = new GreenfootImage("images/santa/Dead (" + i + ").png");
         }
         setImage(santaDie[15]);
+        GreenfootImage santaDie = getImage();
+        santaDie.scale(200, 200);
+        setImage (santaDie);
     }
     /**
      * Act - do whatever the santa wants to do. This method is called whenever
