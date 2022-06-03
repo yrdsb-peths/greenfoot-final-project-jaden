@@ -53,5 +53,6 @@ public class PinkYeti extends Actor
         {
             setLocation(getX()+5, getY());
         }
+        animate();
     }
 }

@@ -13,6 +13,7 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
+    
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -21,6 +22,11 @@ public class MyWorld extends World
         addObject(poe, 200, 200);
         WhiteYeti moe = new WhiteYeti();
         addObject(moe, 400, 200);
+        onePeng doe = new onePeng();
+        addObject(doe, 200, 50);
+        manyPeng roe = new manyPeng();
+        addObject(roe, 400, 50);
+        
     }
 
 }
