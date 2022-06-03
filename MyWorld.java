@@ -25,7 +25,7 @@ public class MyWorld extends World
     public void spawnSanta()
     {
         int x = Greenfoot.getRandomNumber(600);
-        int y = 300;
+        int y = Greenfoot.getRandomNumber(300);
         
         santa santa = new santa();
         addObject(santa, x, y);

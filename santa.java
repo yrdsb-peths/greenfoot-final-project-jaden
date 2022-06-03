@@ -20,14 +20,14 @@ public class santa extends Actor
         for(int i = 1; i < santaWalkRight.length; i++)
         {
             GreenfootImage image = new GreenfootImage("images/santa/Run (" + i + ").png");
-            image.scale(200, 200);
+            image.scale(50, 50);
             santaWalkRight[i] = image;
         }
         
         for(int i = 1; i < santaWalkLeft.length; i++)
         {
             GreenfootImage image = new GreenfootImage("images/santa/Run (" + i + ").png");
-            image.scale(200, 200);
+            image.scale(50, 50);
             santaWalkLeft[i] = image;
             santaWalkLeft[i].mirrorHorizontally();
         }
