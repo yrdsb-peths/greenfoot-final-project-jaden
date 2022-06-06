@@ -18,6 +18,7 @@ public class PinkYeti extends Actor
     String facing = "left";
     public PinkYeti()
     {
+
         for(int i = 0; i < 4; i++)
         {
             moveLeft[i] = new GreenfootImage("images/pinkyetis/p.move" + i + ".png");
@@ -29,6 +30,9 @@ public class PinkYeti extends Actor
         }
         setImage(moveLeft[0]);
         animation.mark();
+        GreenfootImage image = getImage();  
+        image.scale(70, 70);
+        setImage(image);
     }
     int imageIndex = 0;
     public void animate()
