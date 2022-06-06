@@ -16,12 +16,16 @@ public class PinkYeti extends Actor
     SimpleTimer animation = new SimpleTimer();
     public PinkYeti()
     {
+
         for(int i = 0; i < 4; i++)
         {
             move[i] = new GreenfootImage("images/pinkyetis/p.move" + i + ".png");
         }
         setImage(move[0]);
         animation.mark();
+        GreenfootImage image = getImage();  
+        image.scale(70, 70);
+        setImage(image);
     }
     int imageIndex = 0;
     public void animate()
