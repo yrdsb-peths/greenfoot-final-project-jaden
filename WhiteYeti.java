@@ -8,8 +8,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class WhiteYeti extends Actor
 {
-    GreenfootImage[] move = new GreenfootImage[4];
+    GreenfootImage[] moveLeft = new GreenfootImage[4];
+    GreenfootImage[] moveRight = new GreenfootImage[4];
     SimpleTimer animation = new SimpleTimer();
+    String facing = "left";
     /**
      * Act - do whatever the WhiteYeti wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -19,9 +21,14 @@ public class WhiteYeti extends Actor
         
         for(int i = 0; i < 4; i++)
         {
-            move[i] = new GreenfootImage("images/whiteyetis/w.move" + i + ".png");
+            moveLeft[i] = new GreenfootImage("images/whiteyetis/w.move" + i + ".png");
         }
-        setImage(move[0]);     
+        for(int i = 0; i < 4; i++)
+        {
+            moveRight[i] = new GreenfootImage("images/whiteyetis/w.move" + i + ".png");
+            moveRight[i].mirrorHorizontally();
+        }
+        setImage(moveLeft[0]);     
         animation.mark();
         GreenfootImage image = getImage();  
         image.scale(70, 70);
@@ -35,8 +42,17 @@ public class WhiteYeti extends Actor
             return;
         }
         animation.mark();
-        setImage(move[imageIndex]);
-        imageIndex = (imageIndex + 1) % move.length;
+        if(facing.equals("right"))
+        {
+            setImage(moveLeft[imageIndex]);
+            imageIndex = (imageIndex + 1) % moveLeft.length;
+        }
+        else
+        {
+            setImage(moveRight[imageIndex]);
+            imageIndex = (imageIndex + 1) % moveRight.length;
+        }
+        
     }
     public void act()
     {
