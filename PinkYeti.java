@@ -12,15 +12,22 @@ public class PinkYeti extends Actor
      * Act - do whatever the PinkYeti wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    GreenfootImage[] move = new GreenfootImage[4];    
+    GreenfootImage[] moveLeft = new GreenfootImage[4];  
+    GreenfootImage[] moveRight = new GreenfootImage[4];
     SimpleTimer animation = new SimpleTimer();
+    String facing = "left";
     public PinkYeti()
     {
         for(int i = 0; i < 4; i++)
         {
-            move[i] = new GreenfootImage("images/pinkyetis/p.move" + i + ".png");
+            moveLeft[i] = new GreenfootImage("images/pinkyetis/p.move" + i + ".png");
         }
-        setImage(move[0]);
+        for(int i = 0; i < 4; i++)
+        {
+            moveRight[i] = new GreenfootImage("images/pinkyetis/p.move" + i + ".png");
+            moveRight[i].mirrorHorizontally();
+        }
+        setImage(moveLeft[0]);
         animation.mark();
     }
     int imageIndex = 0;
@@ -31,8 +38,17 @@ public class PinkYeti extends Actor
             return;
         }
         animation.mark();
-        setImage(move[imageIndex]);
-        imageIndex = (imageIndex + 1) % move.length;
+        if(facing.equals("right"))
+        {
+            setImage(moveLeft[imageIndex]);
+            imageIndex = (imageIndex + 1) % moveLeft.length;
+        }
+        else
+        {
+            setImage(moveRight[imageIndex]);
+            imageIndex = (imageIndex + 1) % moveRight.length;
+        }
+        
     }
     public void act()
     {
@@ -47,10 +63,12 @@ public class PinkYeti extends Actor
         }
         if(Greenfoot.isKeyDown("a"))
         {
+            facing = "right";
             setLocation(getX()-5, getY());
         }
         if(Greenfoot.isKeyDown("d"))
         {
+            facing = "left";
             setLocation(getX()+5, getY());
         }
         animate();
