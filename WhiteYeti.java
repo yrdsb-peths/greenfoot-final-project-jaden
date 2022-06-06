@@ -42,7 +42,7 @@ public class WhiteYeti extends Actor
             return;
         }
         animation.mark();
-        if(facing.equals("right"))
+        if(facing.equals("left"))
         {
             setImage(moveLeft[imageIndex]);
             imageIndex = (imageIndex + 1) % moveLeft.length;
@@ -67,10 +67,12 @@ public class WhiteYeti extends Actor
         }
         if(Greenfoot.isKeyDown("left"))
         {
+            facing = "left";
             setLocation(getX()-5, getY());
         }
         if(Greenfoot.isKeyDown("right"))
         {
+            facing = "right";
             setLocation(getX()+5, getY());
         }
         animate();

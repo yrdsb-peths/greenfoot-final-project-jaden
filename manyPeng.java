@@ -15,7 +15,7 @@ public class manyPeng extends Actor
     public void act()
     {
         // Add your action code here.
-        move(2);
+        //move(2);
     }
     public manyPeng()
     {
