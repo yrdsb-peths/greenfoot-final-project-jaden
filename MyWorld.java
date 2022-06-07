@@ -21,11 +21,12 @@ public class MyWorld extends World
         PinkYeti poe = new PinkYeti();
         addObject(poe, 40, 40);
         WhiteYeti moe = new WhiteYeti();
-        addObject(moe, 550, 350);
+        addObject(moe, 965, 565);
         onePeng doe = new onePeng();
         addObject(doe, 200, 50);
-        manyPeng roe = new manyPeng();
-        addObject(roe, 400, 50);
+        santa santa = new santa();
+        addObject(santa,500,300);
+        
         
     }
 

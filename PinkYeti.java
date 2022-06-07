@@ -16,6 +16,57 @@ public class PinkYeti extends Actor
     GreenfootImage[] moveRight = new GreenfootImage[4];
     SimpleTimer animation = new SimpleTimer();
     String facing = "left";
+    
+    int lives = 3;
+    int score = 0;
+    public void act()
+    {
+        movement();
+        Eating();
+        Eaten();
+        getWorld().showText("Pink Yeti: " + getScore() + " score" + "\n Pink Yeti: " + lives + " lives", 80, 35);
+    }
+    public int getScore() {
+        return score;
+    }
+    public void setScore(int x) {
+        score += x;
+    }
+    public void Eating() {
+        if (isTouching(onePeng.class) && score == 9) {
+            getWorld().addObject(new santa(), 500, 300);
+        }
+        if (isTouching(onePeng.class)) {
+            removeTouching(onePeng.class);
+            getWorld().addObject(new onePeng(), Greenfoot.getRandomNumber(1000), Greenfoot.getRandomNumber(600));
+            
+            setScore(1);
+        }
+        if (isTouching(manyPeng.class)) {
+            removeTouching(manyPeng.class);
+           
+            setScore(3);
+            lives++;
+        }
+        if (getScore() >= 25) {
+            getWorld().showText("Pink Yeti WINS", 500, 300);           
+            Greenfoot.stop();
+        }
+    }
+    
+    public void Eaten() {
+        if (isTouching(santa.class)) {
+            lives -= 1;
+            setLocation(35, 35);
+            
+        }
+        if (lives <= 0) {
+            getWorld().showText("White Yeti WINS", 500, 300);
+            
+            Greenfoot.stop();
+        }
+    }
+    
     public PinkYeti()
     {
 
@@ -54,7 +105,7 @@ public class PinkYeti extends Actor
         }
         
     }
-    public void act()
+    public void movement()
     {
         // Add your action code here.
         if(Greenfoot.isKeyDown("w"))
