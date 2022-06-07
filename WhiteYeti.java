@@ -24,7 +24,7 @@ public class WhiteYeti extends Actor
         movement();
         Eating();
         Eaten();
-        getWorld().showText("White Yeti: " + getScore() + " score" + "\n White Yeti: " + lives + " lives", 920, 35);
+        getWorld().showText("White Yeti: " + getScore() + " score" + "\n White Yeti: " + lives + " lives", 900, 35);
     }
     public int getScore() {
         return score;
@@ -73,11 +73,13 @@ public class WhiteYeti extends Actor
         for(int i = 0; i < 4; i++)
         {
             moveLeft[i] = new GreenfootImage("images/whiteyetis/w.move" + i + ".png");
+            moveLeft[i].scale(45, 45);
         }
         for(int i = 0; i < 4; i++)
         {
             moveRight[i] = new GreenfootImage("images/whiteyetis/w.move" + i + ".png");
             moveRight[i].mirrorHorizontally();
+            moveRight[i].scale(45, 45);
         }
         setImage(moveLeft[0]);
         animation.mark();

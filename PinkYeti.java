@@ -22,9 +22,10 @@ public class PinkYeti extends Actor
     public void act()
     {
         movement();
+        spawnManyPeng();
         Eating();
         Eaten();
-        getWorld().showText("Pink Yeti: " + getScore() + " score" + "\n Pink Yeti: " + lives + " lives", 80, 35);
+        getWorld().showText("Pink Yeti: " + getScore() + " score" + "\n Pink Yeti: " + lives + " lives", 100, 35);
     }
     public int getScore() {
         return score;
@@ -73,11 +74,15 @@ public class PinkYeti extends Actor
         for(int i = 0; i < 4; i++)
         {
             moveLeft[i] = new GreenfootImage("images/pinkyetis/p.move" + i + ".png");
+             
+            moveLeft[i].scale(45, 45);
         }
         for(int i = 0; i < 4; i++)
         {
             moveRight[i] = new GreenfootImage("images/pinkyetis/p.move" + i + ".png");
             moveRight[i].mirrorHorizontally();
+            
+            moveRight[i].scale(45, 45);
         }
         setImage(moveLeft[0]);
         animation.mark();
@@ -127,5 +132,15 @@ public class PinkYeti extends Actor
             setLocation(getX()+5, getY());
         }
         animate();
+    }
+    int timer = 1200;
+    public void spawnManyPeng() {
+        int x = Greenfoot.getRandomNumber(1000);
+        int y = Greenfoot.getRandomNumber(600);
+        if (timer <= 0) {
+            getWorld().addObject(new manyPeng(), x, y);
+            timer = 1200;
+        }
+        timer--;
     }
 }

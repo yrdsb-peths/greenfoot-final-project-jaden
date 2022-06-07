@@ -13,7 +13,8 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
-    
+    public int pengX = Greenfoot.getRandomNumber(1000);
+    public int pengY = Greenfoot.getRandomNumber(600);
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -23,7 +24,7 @@ public class MyWorld extends World
         WhiteYeti moe = new WhiteYeti();
         addObject(moe, 965, 565);
         onePeng doe = new onePeng();
-        addObject(doe, 200, 50);
+        addObject(doe, pengX, pengY);
         santa santa = new santa();
         addObject(santa,500,300);
         
