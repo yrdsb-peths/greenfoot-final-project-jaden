@@ -87,7 +87,7 @@ public class PinkYeti extends Actor
         setImage(moveLeft[0]);
         animation.mark();
         GreenfootImage image = getImage();  
-        image.scale(70, 70);
+        image.scale(45, 45);
         setImage(image);
     }
     int imageIndex = 0;

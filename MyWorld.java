@@ -15,6 +15,9 @@ public class MyWorld extends World
      */
     public int pengX = Greenfoot.getRandomNumber(1000);
     public int pengY = Greenfoot.getRandomNumber(600);
+    
+    public int PengX = Greenfoot.getRandomNumber(1000);
+    public int PengY = Greenfoot.getRandomNumber(600);
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -27,6 +30,9 @@ public class MyWorld extends World
         addObject(doe, pengX, pengY);
         santa santa = new santa();
         addObject(santa,500,300);
+        
+        onePeng soe = new onePeng();
+        addObject(soe, PengX, PengY);
         
         
     }
