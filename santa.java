@@ -17,11 +17,11 @@ public class santa extends Actor
         // Add your action code here.
         if(DifficultyScreen.difficulty == ("easy"))
         {
-            move(2);
+            move(5);
         }
         if(DifficultyScreen.difficulty == ("medium"))
         {
-            move(5);
+            move(7);
         }
         if(DifficultyScreen.difficulty == ("hard"))
         {
@@ -33,11 +33,5 @@ public class santa extends Actor
         if (isAtEdge()) {
             turn(179);
         }
-    }
-    public santa()
-    {
-        GreenfootImage image = getImage();  
-        image.scale(100, 80);
-        setImage(image);
     }
 }
