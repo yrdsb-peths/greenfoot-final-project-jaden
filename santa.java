@@ -15,7 +15,18 @@ public class santa extends Actor
     public void act()
     {
         // Add your action code here.
-        move(10);
+        if(DifficultyScreen.difficulty == ("easy"))
+        {
+            move(2);
+        }
+        if(DifficultyScreen.difficulty == ("medium"))
+        {
+            move(5);
+        }
+        if(DifficultyScreen.difficulty == ("hard"))
+        {
+            move(10);
+        }
         if (Greenfoot.getRandomNumber(100) < 15) {
             turn(Greenfoot.getRandomNumber(90) - 45);
         }
