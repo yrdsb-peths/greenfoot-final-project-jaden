@@ -23,4 +23,10 @@ public class santa extends Actor
             turn(179);
         }
     }
+    public santa()
+    {
+        GreenfootImage image = getImage();  
+        image.scale(100, 80);
+        setImage(image);
+    }
 }
