@@ -31,7 +31,7 @@ public class santa extends Actor
             turn(Greenfoot.getRandomNumber(90) - 45);
         }
         if (isAtEdge()) {
-            turn(180);
+            turn(179);
         }
     }
 }
