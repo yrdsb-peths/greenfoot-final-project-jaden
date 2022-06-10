@@ -20,9 +20,9 @@ public class DifficultyScreen extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        addObject(easy, 50, 200);
+        addObject(easy, 70, 200);
         addObject(medium, 300, 200);
-        addObject(hard, 550, 200);
+        addObject(hard, 520, 200);
     }
     public void act()
     {
