@@ -17,11 +17,11 @@ public class santa extends Actor
         // Add your action code here.
         if(DifficultyScreen.difficulty == ("easy"))
         {
-            move(5);
+            move(2);
         }
         if(DifficultyScreen.difficulty == ("medium"))
         {
-            move(7);
+            move(5);
         }
         if(DifficultyScreen.difficulty == ("hard"))
         {
