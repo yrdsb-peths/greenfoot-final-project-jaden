@@ -73,18 +73,18 @@ public class WhiteYeti extends Actor
         for(int i = 0; i < 4; i++)
         {
             moveLeft[i] = new GreenfootImage("images/whiteyetis/w.move" + i + ".png");
-            moveLeft[i].scale(45, 45);
+            moveLeft[i].scale(60, 60);
         }
         for(int i = 0; i < 4; i++)
         {
             moveRight[i] = new GreenfootImage("images/whiteyetis/w.move" + i + ".png");
             moveRight[i].mirrorHorizontally();
-            moveRight[i].scale(45, 45);
+            moveRight[i].scale(60, 60);
         }
         setImage(moveLeft[0]);
         animation.mark();
         GreenfootImage image = getImage();  
-        image.scale(45, 45);
+        image.scale(60, 60);
         setImage(image);
     }
     int imageIndex = 0;
