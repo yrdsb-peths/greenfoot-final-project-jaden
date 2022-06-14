@@ -97,7 +97,7 @@ public class PinkYeti extends Actor
     int imageIndex = 0;
     public void animate()
     {
-        if(animation.millisElapsed() < 500)
+        if(animation.millisElapsed() < 100)
         {
             return;
         }
@@ -120,22 +120,26 @@ public class PinkYeti extends Actor
         if(Greenfoot.isKeyDown("w"))
         {
             setLocation(getX(), getY()-5);
+            animate();
         }
         if(Greenfoot.isKeyDown("s"))
         {
             setLocation(getX(), getY()+5);
+            animate();
         }
         if(Greenfoot.isKeyDown("a"))
         {
             facing = "right";
             setLocation(getX()-5, getY());
+            animate();
         }
         if(Greenfoot.isKeyDown("d"))
         {
             facing = "left";
             setLocation(getX()+5, getY());
+            animate();
         }
-        animate();
+        
     }
     int timer = 1200;
     public void spawnManyPeng() {

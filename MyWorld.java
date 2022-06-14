@@ -23,7 +23,7 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 600, 1, false);
         PinkYeti poe = new PinkYeti();
-        addObject(poe, 40, 40);
+        addObject(poe, 40, 90);
         WhiteYeti moe = new WhiteYeti();
         addObject(moe, 965, 565);
         onePeng doe = new onePeng();
