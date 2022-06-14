@@ -50,7 +50,9 @@ public class WhiteYeti extends Actor
         }
         if (getScore() >= 25) {
             getWorld().showText("White Yeti WINS", 500, 300);           
-            Greenfoot.stop();
+            gameOverScreen gameOverScreen = new gameOverScreen();
+            Greenfoot.setWorld(gameOverScreen);
+            PinkYeti.winner = "white";
         }
     }
     
@@ -63,7 +65,9 @@ public class WhiteYeti extends Actor
         if (lives <= 0) {
             getWorld().showText("Pink Yeti WINS", 500, 300);
             
-            Greenfoot.stop();
+            gameOverScreen gameOverScreen = new gameOverScreen();
+            Greenfoot.setWorld(gameOverScreen);
+            PinkYeti.winner = "pink";
         }
     }
     

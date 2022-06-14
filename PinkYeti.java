@@ -16,6 +16,7 @@ public class PinkYeti extends Actor
     GreenfootImage[] moveRight = new GreenfootImage[4];
     SimpleTimer animation = new SimpleTimer();
     String facing = "left";
+    static String winner = "pink";
     
     int lives = 3;
     int score = 0;
@@ -51,7 +52,9 @@ public class PinkYeti extends Actor
         }
         if (getScore() >= 25) {
             getWorld().showText("Pink Yeti WINS", 500, 300);           
-            Greenfoot.stop();
+            gameOverScreen gameOverScreen = new gameOverScreen();
+            Greenfoot.setWorld(gameOverScreen);
+            winner = "pink";
         }
     }
     
@@ -63,8 +66,9 @@ public class PinkYeti extends Actor
         }
         if (lives <= 0) {
             getWorld().showText("White Yeti WINS", 500, 300);
-            
-            Greenfoot.stop();
+            winner = "white";
+            gameOverScreen gameOverScreen = new gameOverScreen();
+            Greenfoot.setWorld(gameOverScreen);
         }
     }
     
