@@ -14,12 +14,12 @@ public class titlePenguin extends Actor
      */
     GreenfootImage[] walk = new GreenfootImage[9];
     SimpleTimer animation = new SimpleTimer();
-    public void titlePenguin()
+    public titlePenguin()
     {
-        for(int i = 0; i < walk.length; i++)
+        for(int i = 0; i < 9; i++)
         {
             walk[i] = new GreenfootImage("images/titlePengs/walk" + i + ".png"); 
-            
+            walk[i].scale(200, 200);
         }
         setImage(walk[0]);
         animation.mark();
@@ -27,7 +27,7 @@ public class titlePenguin extends Actor
     int imageIndex = 0;
     public void animate()
     {
-        if(animation.millisElapsed() < 500)
+        if(animation.millisElapsed() < 200)
         {
             return;
         }
