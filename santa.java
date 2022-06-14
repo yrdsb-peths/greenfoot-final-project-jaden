@@ -18,11 +18,12 @@ public class santa extends Actor
     {
         // Add your action code here.
         movement();
+        animate();
         
     }
     public void movement()
     {
-        animate();
+        
         if(DifficultyScreen.difficulty == ("easy"))
         {
             move(2);

@@ -11,6 +11,7 @@ public class DifficultyScreen extends World
     Label easy = new Label ("Easy", 50);
     Label medium = new Label ("Medium", 50);
     Label hard = new Label ("Hard", 50);
+    Label select = new Label ("Pick a difficulty", 50);
     static String difficulty = ("easy");
     /**
      * Constructor for objects of class DifficultyScreen.
@@ -23,6 +24,8 @@ public class DifficultyScreen extends World
         addObject(easy, 70, 200);
         addObject(medium, 300, 200);
         addObject(hard, 520, 200);
+        addObject(select, 300, 100);
+        
     }
     public void act()
     {

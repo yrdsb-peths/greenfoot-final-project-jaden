@@ -8,8 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class gameOverScreen extends World
 {
-    Label restart = new Label ("Play Again", 50);
-    Label difficulty = new Label ("Change Difficulty", 50);
+    Label restart = new Label ("Play Again", 25);
+    Label difficulty = new Label ("Change Difficulty", 25);
     /**
      * Constructor for objects of class gameOverScreen.
      * 
@@ -21,6 +21,9 @@ public class gameOverScreen extends World
         addObject(restart, 100, 200);
         
         addObject(difficulty, 500, 200);
+        
+        Label winner = new Label(PinkYeti.winner + " wins!", 100);
+        addObject(winner, 300, 100);
     }
     public void act()
     {
