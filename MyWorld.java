@@ -34,7 +34,6 @@ public class MyWorld extends World
         onePeng soe = new onePeng();
         addObject(soe, PengX, PengY);
         
-        
     }
 
 }
