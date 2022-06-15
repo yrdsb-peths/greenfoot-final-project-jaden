@@ -12,7 +12,7 @@ public class gameOverScreen extends World
     Label difficulty = new Label ("Change Difficulty", 25);
     GreenfootImage pinkWins = new GreenfootImage("images/pinkyetis/pinkwins.png");
     GreenfootImage pinkDies = new GreenfootImage("images/pinkyetis/pinkdies.png");
-    GreenfootImage whiteWins = new GreenfootImage("images/whiteyetis/white.png");
+    GreenfootImage whiteWins = new GreenfootImage("images/whiteyetis/whitewins.png");
     GreenfootImage whiteDies = new GreenfootImage("images/whiteyetis/whitedies.png");
     
     /**
@@ -29,6 +29,7 @@ public class gameOverScreen extends World
         
         Label winner = new Label(PinkYeti.winner + " wins!", 100);
         addObject(winner, 300, 100);
+        
     }
     public void act()
     {

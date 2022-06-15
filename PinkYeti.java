@@ -71,7 +71,6 @@ public class PinkYeti extends Actor
             Greenfoot.setWorld(gameOverScreen);
         }
     }
-    
     public PinkYeti()
     {
 
