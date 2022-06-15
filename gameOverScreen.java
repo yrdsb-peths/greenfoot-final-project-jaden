@@ -20,7 +20,7 @@ public class gameOverScreen extends World
         super(600, 400, 1); 
         addObject(restart, 100, 200);
         
-        addObject(difficulty, 500, 200);
+        addObject(difficulty, 450, 200);
         
         Label winner = new Label(PinkYeti.winner + " wins!", 100);
         addObject(winner, 300, 100);
