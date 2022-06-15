@@ -12,14 +12,14 @@ public class santa extends Actor
      * Act - do whatever the santa wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    GreenfootImage[] slide = new GreenfootImage[10];
+    //GreenfootImage[] slide = new GreenfootImage[10];
     SimpleTimer animation = new SimpleTimer();
     
     public void act()
     {
         // Add your action code here.
         movement();
-        animate();
+        
         
     }
     public void movement()
@@ -44,23 +44,23 @@ public class santa extends Actor
             turn(179);
         }
     }
-    public santa()
-    {
+    //public santa()
+    //{
 
-        for(int i = 0; i < 10; i++)
-        {
-            slide[i] = new GreenfootImage("images/Slide (" + i + ").png");
+        //for(int i = 0; i < 10; i++)
+        //{
+        //    slide[i] = new GreenfootImage("images/santa.png");
              
-            slide[i].scale(150, 110);
-        }
+        //    slide[i].scale(150, 110);
+        //}
         
-        setImage(slide[0]);
-        animation.mark();
-        GreenfootImage image = getImage();  
-        image.scale(150, 110);
-        setImage(image);
-    }
-    int imageIndex = 0;
+        //setImage(slide[0]);
+        //animation.mark();
+        //GreenfootImage image = getImage();  
+        //image.scale(150, 110);
+        //setImage(image);
+    //}
+    /**int imageIndex = 0;
     public void animate()
     {
         if(animation.millisElapsed() < 500)
@@ -74,5 +74,5 @@ public class santa extends Actor
         imageIndex = (imageIndex + 1) % slide.length;
         
         
-    }
+    }**/
 }
