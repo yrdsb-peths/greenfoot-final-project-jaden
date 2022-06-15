@@ -10,6 +10,11 @@ public class gameOverScreen extends World
 {
     Label restart = new Label ("Play Again", 25);
     Label difficulty = new Label ("Change Difficulty", 25);
+    GreenfootImage pinkWins = new GreenfootImage("images/pinkyetis/pinkwins.png");
+    GreenfootImage pinkDies = new GreenfootImage("images/pinkyetis/pinkdies.png");
+    GreenfootImage whiteWins = new GreenfootImage("images/whiteyetis/white.png");
+    GreenfootImage whiteDies = new GreenfootImage("images/whiteyetis/whitedies.png");
+    
     /**
      * Constructor for objects of class gameOverScreen.
      * 
