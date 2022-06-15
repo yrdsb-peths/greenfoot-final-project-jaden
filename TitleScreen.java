@@ -49,7 +49,7 @@ public class TitleScreen extends World
         }
         if(Greenfoot.mousePressed(help) == true)
         {
-            DifficultyScreen screen = new DifficultyScreen();
+            Help screen = new Help();
             Greenfoot.setWorld(screen);
             choice = ("help");
         }

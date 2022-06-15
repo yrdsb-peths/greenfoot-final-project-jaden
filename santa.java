@@ -14,6 +14,7 @@ public class santa extends Actor
      */
     GreenfootImage[] slide = new GreenfootImage[10];
     SimpleTimer animation = new SimpleTimer();
+    
     public void act()
     {
         // Add your action code here.
@@ -50,13 +51,13 @@ public class santa extends Actor
         {
             slide[i] = new GreenfootImage("images/Slide (" + i + ").png");
              
-            slide[i].scale(130, 130);
+            slide[i].scale(150, 110);
         }
         
         setImage(slide[0]);
         animation.mark();
         GreenfootImage image = getImage();  
-        image.scale(130, 130);
+        image.scale(150, 110);
         setImage(image);
     }
     int imageIndex = 0;
