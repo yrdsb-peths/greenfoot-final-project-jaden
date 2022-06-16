@@ -13,7 +13,6 @@ public class TitleScreen extends World
     Label play = new Label("Play", 50);
     Label help = new Label("Help", 50);
     static String choice = ("help");
-    GreenfootImage pb = new GreenfootImage("images/playButton.
     /**
      * Constructor for objects of class TitleScreen.
      * 

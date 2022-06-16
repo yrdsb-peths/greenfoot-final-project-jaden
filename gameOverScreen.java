@@ -26,7 +26,7 @@ public class gameOverScreen extends World
         super(600, 400, 1); 
         addObject(restart, 140, 140);
         
-        addObject(difficulty, 450, 140);
+        addObject(difficulty, 430, 140);
         
         Label winner = new Label(PinkYeti.winner + " wins!", 65);
         addObject(winner, 300, 60);
@@ -36,13 +36,13 @@ public class gameOverScreen extends World
         deadWhite dw = new deadWhite();
         if(PinkYeti.winner == "pink")
         {
-            addObject(wp, 400, 300);
-            addObject(dw, 220, 330);
+            addObject(wp, 390, 300);
+            addObject(dw, 220, 350);
         }
         if(PinkYeti.winner == "white")
         {
-            addObject(ww, 400, 300);
-            addObject(dp, 220, 330);
+            addObject(ww, 390, 300);
+            addObject(dp, 220, 350);
         }
         
     }
