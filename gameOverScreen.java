@@ -8,8 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class gameOverScreen extends World
 {
-    Label restart = new Label ("Play Again", 25);
-    Label difficulty = new Label ("Change Difficulty", 25);
+    Label restart = new Label ("Play Again", 40);
+    Label difficulty = new Label ("Change Difficulty", 40);
     /**
     GreenfootImage pinkWins = new GreenfootImage("images/pinkyetis/pinkwins.png");
     GreenfootImage pinkDies = new GreenfootImage("images/pinkyetis/pinkdies.png");
@@ -24,25 +24,25 @@ public class gameOverScreen extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        addObject(restart, 100, 200);
+        addObject(restart, 140, 140);
         
-        addObject(difficulty, 450, 200);
+        addObject(difficulty, 450, 140);
         
-        Label winner = new Label(PinkYeti.winner + " wins!", 100);
-        addObject(winner, 300, 100);
+        Label winner = new Label(PinkYeti.winner + " wins!", 65);
+        addObject(winner, 300, 60);
         winPink wp = new winPink();
         winWhite ww = new winWhite();
         deadPink dp = new deadPink();
         deadWhite dw = new deadWhite();
         if(PinkYeti.winner == "pink")
         {
-            addObject(wp, 400, 500);
-            addObject(dw, 200, 500);
+            addObject(wp, 400, 300);
+            addObject(dw, 220, 330);
         }
         if(PinkYeti.winner == "white")
         {
-            addObject(ww, 400, 500);
-            addObject(dp, 200, 500);
+            addObject(ww, 400, 300);
+            addObject(dp, 220, 330);
         }
         
     }

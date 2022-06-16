@@ -13,6 +13,7 @@ public class Help extends World
     Label line2 = new Label("keys to control your yeti", 30);
     Label line3 = new Label("* eat as many penguins as possible", 30);
     Label line4 = new Label("while avoiding the santas", 30);
+    Label line5 = new Label("* first to 25 points wins!", 30);
     Label Continue = new Label("<click space to play>", 50);
     /**
      * Constructor for objects of class Help.
@@ -27,7 +28,8 @@ public class Help extends World
         addObject(line2, 300, 160);
         addObject(line3, 300, 210);
         addObject(line4, 300, 260);
-        addObject(Continue, 300, 310);
+        addObject(line5, 300, 310);
+        addObject(Continue, 300, 360);
     }
     public void act()
     {
