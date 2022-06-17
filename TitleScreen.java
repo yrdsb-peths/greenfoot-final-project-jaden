@@ -13,6 +13,7 @@ public class TitleScreen extends World
     Label play = new Label("Play", 50);
     Label help = new Label("Help", 50);
     static String choice = ("help");
+    playButton pb = new playButton();
     /**
      * Constructor for objects of class TitleScreen.
      * 
@@ -28,7 +29,7 @@ public class TitleScreen extends World
         soundTrack.playLoop();
         titlePenguin roe = new titlePenguin();
         addObject(roe, getWidth()/2, 200);
-    
+        addObject(pb, 150, 300);
     }
     public void stopped()
     {
@@ -41,11 +42,11 @@ public class TitleScreen extends World
     }
     public void act()
     {
-        if(Greenfoot.mousePressed(play) == true)
+        if(Greenfoot.mousePressed(pb) == true)
         {
             DifficultyScreen screen = new DifficultyScreen();
             Greenfoot.setWorld(screen);
-            choice = ("play");
+            choice = ("pb");
         }
         if(Greenfoot.mousePressed(help) == true)
         {
