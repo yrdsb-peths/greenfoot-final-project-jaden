@@ -1,9 +1,9 @@
 #BlueJ class context
 comment0.target=gameOverScreen
-comment0.text=\n\ Write\ a\ description\ of\ class\ gameOverScreen\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ gameOverScreen\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=gameOverScreen()
-comment1.text=\n\ \ \ \ GreenfootImage\ pinkWins\ \=\ new\ GreenfootImage("images/pinkyetis/pinkwins.png");\n\ \ \ \ GreenfootImage\ pinkDies\ \=\ new\ GreenfootImage("images/pinkyetis/pinkdies.png");\n\ \ \ \ GreenfootImage\ whiteWins\ \=\ new\ GreenfootImage("images/whiteyetis/whitewins.png");\n\ \ \ \ GreenfootImage\ whiteDies\ \=\ new\ GreenfootImage("images/whiteyetis/whitedies.png");\n\ \ \ \ \n\ \ \ \ /**\n\ Constructor\ for\ objects\ of\ class\ gameOverScreen.\n\ \n
+comment1.text=\r\n\ \ \ \ GreenfootImage\ pinkWins\ \=\ new\ GreenfootImage("images/pinkyetis/pinkwins.png");\r\n\ \ \ \ GreenfootImage\ pinkDies\ \=\ new\ GreenfootImage("images/pinkyetis/pinkdies.png");\r\n\ \ \ \ GreenfootImage\ whiteWins\ \=\ new\ GreenfootImage("images/whiteyetis/whitewins.png");\r\n\ \ \ \ GreenfootImage\ whiteDies\ \=\ new\ GreenfootImage("images/whiteyetis/whitedies.png");\r\n\ \ \ \ \r\n\ \ \ \ /**\r\n\ Constructor\ for\ objects\ of\ class\ gameOverScreen.\r\n\ \r\n
 comment2.params=
 comment2.target=void\ act()
 numComments=3
