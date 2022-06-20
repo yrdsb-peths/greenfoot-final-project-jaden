@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class continueButton here.
+ * continue button leads to difficulty screen.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jaden and Raina
+ * @version (22.06.20)
  */
 public class continueButton extends Actor
 {

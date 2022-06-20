@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=WhiteYeti
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ WhiteYeti\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ White\ yeti\ is\ controlled\ by\ player.\n\ \n\ @author\ Jaden\ and\ Raina\n\ @version\ (22.06.20)\n
 comment1.params=
 comment1.target=void\ act()
 comment2.params=

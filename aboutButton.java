@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class helpButton here.
+ * About button leads to About menu.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jaden and Raina
+ * @version (22.06.20)
  */
 public class aboutButton extends Actor
 {

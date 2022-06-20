@@ -1,7 +1,6 @@
 #BlueJ class context
 comment0.target=deadPink
-comment0.text=\n\ Write\ a\ description\ of\ class\ deadPink\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Pink\ yeti\ graphic\ is\ displayed\ in\ end\ screen\ when\ white\ yeti\ wins.\n\ \n\ @author\ Jaden\ and\ Raina\n\ @version\ (22.06.20)\n
 comment1.params=
 comment1.target=void\ act()
-comment1.text=\n\ Act\ -\ do\ whatever\ the\ deadPink\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
 numComments=2

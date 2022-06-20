@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class santa here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * 
+ * @author Jaden and Raina
+ * @version (22.06.20)
  */
 public class santa extends Actor
 {
@@ -12,14 +12,11 @@ public class santa extends Actor
      * Act - do whatever the santa wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    //GreenfootImage[] slide = new GreenfootImage[10];
-    SimpleTimer animation = new SimpleTimer();
     
     public void act()
     {
         // Add your action code here.
         movement();
-        
         
     }
     public void movement()
@@ -44,35 +41,6 @@ public class santa extends Actor
             turn(179);
         }
     }
-    //public santa()
-    //{
-
-        //for(int i = 0; i < 10; i++)
-        //{
-        //    slide[i] = new GreenfootImage("images/santa.png");
-             
-        //    slide[i].scale(150, 110);
-        //}
-        
-        //setImage(slide[0]);
-        //animation.mark();
-        //GreenfootImage image = getImage();  
-        //image.scale(150, 110);
-        //setImage(image);
-    //}
-    /**int imageIndex = 0;
-    public void animate()
-    {
-        if(animation.millisElapsed() < 500)
-        {
-            return;
-        }
-        animation.mark();
-        
-        
-        setImage(slide[imageIndex]);
-        imageIndex = (imageIndex + 1) % slide.length;
-        
-        
-    }**/
+    
+    
 }

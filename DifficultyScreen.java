@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class DifficultyScreen here.
+ * Displays levels of difficulty for user to choose from
  * 
  * @author Raina and Jaden 
  * @version 17.06
