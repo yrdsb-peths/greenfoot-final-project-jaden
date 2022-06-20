@@ -12,8 +12,9 @@ public class DifficultyScreen extends World
     Label medium = new Label ("Medium", 50);
     Label hard = new Label ("Hard", 50);
     Label select = new Label ("Pick a difficulty", 50);
-    Label back = new Label ("Back", 30);
     static String difficulty = ("easy");
+    backButton b = new backButton();
+
     /**
      * Constructor for objects of class DifficultyScreen.
      * 
@@ -26,12 +27,12 @@ public class DifficultyScreen extends World
         addObject(medium, 300, 200);
         addObject(hard, 520, 200);
         addObject(select, 300, 100);
-        addObject(back, 50, 30);
+        addObject(b, 50, 30);
         
     }
     public void act()
     {
-        if(Greenfoot.mousePressed(back) == true)
+        if(Greenfoot.mousePressed(b) == true)
         {
             TitleScreen gameWorld = new TitleScreen();
             Greenfoot.setWorld(gameWorld);

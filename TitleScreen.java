@@ -10,9 +10,9 @@ public class TitleScreen extends World
 {
     Label titleLabel = new Label("Penguin Dinner", 80);
     GreenfootSound soundTrack = new GreenfootSound("backgroundmusic.mp3");
-    Label help = new Label("Help", 50);
-    static String choice = ("help");
-    playButton pb = new playButton();
+    static String choice = ("about");
+    playButton p = new playButton();
+    aboutButton a = new aboutButton();
     /**
      * Constructor for objects of class TitleScreen.
      * 
@@ -23,11 +23,11 @@ public class TitleScreen extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false); 
         addObject(titleLabel, getWidth()/2, 80);
-        addObject(help, 450, 300);
         soundTrack.playLoop();
         titlePenguin roe = new titlePenguin();
         addObject(roe, getWidth()/2, 200);
-        addObject(pb, 150, 320);
+        addObject(p, 150, 320);
+        addObject(a, 450, 320);
     }
     public void stopped()
     {
@@ -40,17 +40,17 @@ public class TitleScreen extends World
     }
     public void act()
     {
-        if(Greenfoot.mousePressed(pb) == true)
+        if(Greenfoot.mousePressed(p) == true)
         {
             DifficultyScreen screen = new DifficultyScreen();
             Greenfoot.setWorld(screen);
-            choice = ("pb");
+            choice = ("p");
         }
-        if(Greenfoot.mousePressed(help) == true)
+        if(Greenfoot.mousePressed(a) == true)
         {
-            Help screen = new Help();
+            About screen = new About();
             Greenfoot.setWorld(screen);
-            choice = ("help");
+            choice = ("about");
         }
     }
 }
