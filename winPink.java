@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class winPink here.
+ * pink yeti class
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Raina and Jaden) 
+ * @version (22.06.20)
  */
 public class winPink extends Actor
 {

@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class DifficultyScreen here.
+ * Allows user to choose and change the difficulty of the game
  * 
- * @author Raina and Jaden 
- * @version 17.06
+ * @author (Raina and Jaden) 
+ * @version (22.06.20)
  */
 public class DifficultyScreen extends World
 {
