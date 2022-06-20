@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Help here.
+ * Provides a small tutorial on the premise of the game
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Raina and Jaden) 
+ * @version (22.06.20)
  */
 public class About extends World
 {

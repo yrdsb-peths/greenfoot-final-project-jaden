@@ -1,9 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Play button leads to game screen.
+ * play button class
  * 
- * @author Jaden and Raina
+ * @author (Raina and Jaden) 
  * @version (22.06.20)
  */
 public class playButton extends Actor

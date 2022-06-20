@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class gameOverScreen here.
+ * screen that is shown after either play one or two lose the game
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Raina and Jaden) 
+ * @version (22.06.20)
  */
 public class gameOverScreen extends World
 {
